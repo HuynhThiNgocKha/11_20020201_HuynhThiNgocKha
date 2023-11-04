@@ -71,7 +71,7 @@ export default function Screen_4a() {
           renderItem={({item})=>{
             return(
               <View style={{width:'100%', height: 90, flexDirection:'row', borderColor:'rgba(196, 196, 196, 1)', borderWidth:1}}>
-                  <Image source={item.img} style={{width: 80, height:80 }}/>
+                  <Image source={item.img} style={{width: 80, height:80, borderRadius:200}}/>
                   <View style={{marginTop: 15}}>
                       <Text style={{fontSize: 15, fontWeight:'500'}}>{item.name}</Text>
                       <Text style={{fontSize: 15, fontWeight:'500', color:'red', marginTop: 10, }}>{item.decription}</Text>

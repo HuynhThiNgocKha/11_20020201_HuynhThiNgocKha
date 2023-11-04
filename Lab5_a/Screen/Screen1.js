@@ -130,6 +130,7 @@ export default function Screen1({navigation}) {
         </View>
         <View>
             <FlatList
+            numColumns={2}
                 data={data}
                 renderItem={({item})=>{
                     return(

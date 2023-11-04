@@ -1,0 +1,43 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, Image, Pressable, TextInput } from 'react-native';
+import React from 'react';
+import { NavigationAction } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+export default function Screen1({navigation}) {
+  return (
+    <View style={styles.container}>
+      <Image source={require('../assets/Image 95.png')} style={{width: 250, height: 250}}></Image>
+      <Text style={{fontSize: 20, color: '#8353E2', justifyContent:'center', alignItems:'center', fontWeight: '700'}}>MANAGE YOUR {'\n'}        TAST</Text>
+      
+      <View style={{flexDirection: 'row', width: 350, height: 50, borderWidth:1, borderRadius: 5, margin: 10, }}>
+        <Image source={require('../assets/email.png')} style={{width:30, height: 30, marginTop: 10, marginLeft: 5}}></Image>
+        <TextInput
+          placeholder='Enter your name'
+          style={{width: 320,height:30,fontSize: 18,marginLeft: 10, marginTop: 10, borderColor: 'gray'}}
+        >
+          
+          
+        </TextInput>
+      </View>
+
+      <Pressable
+        onPress ={()=> navigation.navigate('Screen2')}
+        style={{width: 200, height: 45, backgroundColor: '#00BDD6', margin: 80, borderRadius: 10}}
+        
+      >
+        <Text style={{fontSize: 18, fontWeight: '600', color: 'white', marginTop: 10, marginLeft: 45}}>GET STARTED</Text>
+      </Pressable>
+      
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

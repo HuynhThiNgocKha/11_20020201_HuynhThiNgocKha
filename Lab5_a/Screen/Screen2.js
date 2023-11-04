@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 
 export default function Screen2({navigation, route}) {
-  const [data, setData] = useState(1);
+  //const [data, setData] = useState(1);
   return (
     <View style={styles.container}>
       <View>
