@@ -16,17 +16,16 @@ export default function Screen1({navigation}) {
           placeholder='Enter your name'
           style={{width: 320,height:30,fontSize: 18,marginLeft: 10, marginTop: 10, borderColor: 'gray'}}
         >
-          
-          
         </TextInput>
       </View>
-
+          
       <Pressable
-        onPress ={()=> navigation.navigate('Screen2')}
-        style={{width: 200, height: 45, backgroundColor: '#00BDD6', margin: 80, borderRadius: 10}}
+        onPress ={()=> navigation.navigate('Screen2',{id:1})}
+        style={{width: 200, height: 45, backgroundColor: '#00BDD6', margin: 80, borderRadius: 10, flexDirection:'row'}}
         
       >
-        <Text style={{fontSize: 18, fontWeight: '600', color: 'white', marginTop: 10, marginLeft: 45}}>GET STARTED</Text>
+        <Text style={{fontSize: 18, fontWeight: '600', color: 'white', marginTop: 10, marginLeft: 30}}>GET STARTED</Text>
+        <Image source={require('../assets/muiten.png')} style={{width: 20,height: 15, marginTop: 14, marginLeft: 10}}/>
       </Pressable>
       
     </View>
